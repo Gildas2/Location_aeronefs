@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 50px;
+}
+
+.header {
+  padding: 10px;
+  background: white;
+}
+.carousel {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: relative;
+  height: 250px;
+}
+.carousel-image {
+  width: 150%;
+  object-fit: cover;
+  height: 230px;
+}
+.list-ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.pre {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}

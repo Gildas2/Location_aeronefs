@@ -1,0 +1,41 @@
+<div class="container bg-info">
+  <div [ngStyle]="{
+    'border-top':'5px solid red',
+    width:counterValue,
+    'transition':'all 0.1s linear'
+  }">
+
+
+  </div>
+
+  <div class="header">
+    Document ({{currentIndex +1}} / {{slides.length}})
+  </div>
+  <div class="carousel">
+    <ul class="list-ul">
+        <li class="list-li" *ngFor="let slide of slides;let i=index">
+        <ng-container *ngIf="i===currentIndex">
+          <img class="carousel-image" [src]="slide.src" @carouselAnimation>
+        </ng-container>
+        </li>
+    </ul>
+
+    <div>
+      <button class="next" (click)="next()">
+        Next
+      </button>
+      <button class="pre" (click)="pre()">
+        Pre
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<div>
+  <p>Bienvenue sur notre site de location d'aéronefs, où vous pouvez trouver une grande variété d'avions et d'hélicoptères pour répondre à tous vos besoins en matière de transport aérien. Nous sommes fiers de vous offrir un service de location professionnel, fiable et sûr pour vos voyages d'affaires, vos événements spéciaux ou simplement pour explorer le monde depuis les airs.
+
+    Nous sommes dévoués à fournir une expérience de location de qualité supérieure, en offrant des aéronefs de haute qualité et en veillant à ce que nos clients soient satisfaits de chaque aspect de leur location. Notre équipe est composée de professionnels de l'aviation expérimentés et dévoués, qui sont là pour vous aider à chaque étape de votre voyage.
+
+    Nous sommes impatients de vous aider à trouver l'aéronef parfait pour répondre à vos besoins de location. N'hésitez pas à parcourir notre sélection d'avions et d'hélicoptères et à nous contacter si vous avez des questions ou des demandes spéciales.</p>
+</div>

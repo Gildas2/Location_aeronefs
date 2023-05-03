@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header text-white bg-info"> {{ pageTitle }} </div>
+
+    <div class="card-body">
+      <form (ngSubmit)="saveHotel(aeroForm)" #aeroForm="ngForm" >
+        <div class="form-group row mb-2">
+          <label for="nom" class="col-md-2 col-form-label">
+            Nom
+          </label>
+          <div class="col-md-8">
+            <input
+              id="nom"
+              type="text"
+              class="form-control"
+              placeholder="nom"
+              [(ngModel)]="user.lastName"
+              name="lastName"
+            />
+          </div>
+        </div>
+        <div class="form-group row mb-2">
+          <label for="prenom" class="col-md-2 col-form-label">
+            Prénom</label
+          >
+          <div class="col-md-8">
+            <input
+              id="prenom"
+              type="text"
+              class="form-control"
+              placeholder="prénom"
+              [(ngModel)]="user.firstName"
+              name="firstName"
+            />
+          </div>
+        </div>
+        <div class="form-group row mb-2">
+          <label for="email" class="col-md-2 col-form-label">
+            Adresse e-mail</label>
+          <div class="col-md-8">
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="email"
+              [(ngModel)]="user.email"
+              name="email"
+            />
+          </div>
+        </div>
+        <div class="form-group row mb-2">
+          <label for="dateDepart" class="col-md-2 col-form-label">
+            Date de départ</label>
+          <div class="col-md-8">
+            <input
+              id="dateDepart"
+              type="date"
+              class="form-control"
+              placeholder="date de départ"
+              [(ngModel)]="user.dateDepart"
+              name="dateDepart"
+            />
+          </div>
+        </div>
+        <div class="form-group row mb-2">
+          <label for="dateArrive" class="col-md-2 col-form-label">
+            Date d'arrivée</label>
+          <div class="col-md-8">
+            <input
+              id="dateArrive"
+              type="date"
+              class="form-control"
+              placeholder="date d'arrivée"
+              [(ngModel)]="user.dateArrive"
+              name="dateArrive"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row mb-2">
+          <div class="offset-md-2 col-md-4">
+            <button class="btn btn-info mr-3" type="submit">Envoyer</button>
+            <button
+              class="btn btn-outline-secondary mr-3"
+              type="button"
+              title="Annuler les modifications"
+              [routerLink]="['/aeros']"
+            >
+              Annuler
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

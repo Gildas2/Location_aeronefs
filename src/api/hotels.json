@@ -1,0 +1,37 @@
+[
+  {
+        "aeroId": 1,
+        "aeroName": "Casa CN 235",
+        "description": "",
+        "price": 230.5,
+        "imageUrl": "assets/img/casa.jpeg"
+  },
+  {
+        "aeroId": 2,
+        "aeroName": "King Air BE 20",
+        "description": "",
+        "price": 145.5,
+        "imageUrl": "assets/img/king.jpeg"
+  },
+  {
+        "aeroId": 3,
+        "aeroName": "MI 17",
+        "description": "",
+        "price": 120.12,
+        "imageUrl": "assets/img/mi.jpeg"
+  },
+  {
+        "aeroId": 4,
+        "aeroName": "ECUREUIL AS 350",
+        "description": "",
+        "price": 135.12,
+        "imageUrl": "assets/img/Ecureuil.jpeg"
+  },
+    {
+        "aeroId": 5,
+        "aeroName": "AIR TRACTOR AT 802",
+        "description": "",
+        "price": 135.12,
+        "imageUrl": "assets/img/Tractor.jpeg"
+  }
+]

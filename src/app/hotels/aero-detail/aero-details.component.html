@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="card" *ngIf="aero">
+    <div class="card-header text-white bg-info">
+      {{ aero.AeroName | uppercase }}
+    </div>
+
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">Nom:</div>
+            <div class="col-md-8">{{ aero.AeroName }}</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4">Description:</div>
+            <div class="col-md-8">{{ aero.description }}</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">Prix:</div>
+            <div class="col-md-8">
+              {{
+                aero.price
+                  | currency: "FCFA":"symbol":"1.2-2":"fr"
+              }}
+            </div>
+          </div>
+
+
+        <div class="col-md-4">
+          <img
+            [src]="aero.imageUrl"
+            [title]="aero.AeroName | uppercase"
+            [alt]="aero.AeroName"
+            class="card-img-top"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <button class="btn btn-outline-info d-flex" (click)="backToList()">
+        <span class="material-icons"> keyboard_arrow_left </span>
+        Retour à la liste
+      </button>
+    </div>
+  </div>
+</div>

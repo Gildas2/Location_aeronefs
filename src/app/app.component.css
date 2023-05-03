@@ -1,0 +1,16 @@
+
+/* Modifier la couleur de fond du menu en bleu foncé */
+.navbar.bg-info {
+ /* Remplacez cette valeur par la couleur souhaitée */
+  height: 80px;
+}
+
+/* Espacer les titres de menu */
+.navbar-nav .nav-link {
+  margin-right: 10px; /* Remplacez cette valeur par l'espace souhaité entre les titres de menu */
+  text-transform: uppercase;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  font-family: montserrat;
+}

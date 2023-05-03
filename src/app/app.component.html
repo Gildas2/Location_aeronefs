@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand" [routerLink]="['']"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <a class="nav-link"
+         [routerLink]="['/home']"
+         [routerLinkActive]="['active']"
+         [routerLinkActiveOptions]="{ exact: true }"
+         >
+        Accueil
+      </a>
+      <a
+        class="nav-link"
+        [routerLink]="['/aeros']"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Aéronefs
+      </a>
+      <a
+        class="nav-link"
+        [routerLink]="['/aeros', '0', 'edit']"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Location
+      </a>
+      <a
+        class="nav-link"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        A propos
+      </a>
+      <a
+        class="nav-link"
+        [routerLink]="['contact']"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Contact
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="mt-5 container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Armée de l'Air</h5>
+
+        <p>
+          Explorez le monde depuis les airs avec notre flotte d'aéronefs de haute qualité. Louez un avion ou un hélicoptère pour vos voyages d'affaires ou vos escapades en famille et profitez de vues spectaculaires sur les plus beaux paysages de notre planète. Notre équipe d'experts est à votre disposition pour répondre à toutes vos demandes et vous garantir une expérience de vol inoubliable. Contactez-nous dès maintenant pour réserver votre prochain voyage dans les airs.
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Liens utiles</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a
+              class="text-dark"
+              [routerLink]="['/home']"
+            >
+              Accueil
+            </a>
+          </li>
+          <li>
+            <a
+             class="text-dark"
+             [routerLink]="['/aeros']"
+            >
+            Aéronefs
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-dark"
+              [routerLink]="['/aeros', '0', 'edit']"
+            >
+            Réservation
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-dark"
+            >
+            A propos
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-dark"
+              [routerLink]="['contact']"
+            >
+            Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Liens sociaux</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-dark"><i class="material-icons">facebook</i> Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Twitter</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark"><i class="material-icons"></i> LinkedIn</a>
+          </li>
+          <li>
+            <li>
+              <a href="#!" class="text-dark"><i class="material-icons"></i> Instagram</a>
+            </li>
+          <li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 bg-info">
+    © 2023 Mon site web
+  </div>
+</footer>
+
+
